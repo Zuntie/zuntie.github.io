@@ -1,0 +1,74 @@
+/* Custom Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+@font-face {
+    font-family: "Stricken Brush";
+    src: url("assets/fonts/StrickenBrush.ttf");
+}
+
+/* Styling */
+body {
+    /* Disable Selection Highlight */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+body:not(.navbar-nav) { /* Shit works as intended, dont know why?. I don't need :not but it doesnt work without. */
+    background-color: #2d3436;
+}
+.title {
+    text-shadow: 2px 2px 5px black;
+    position: fixed;
+    width: 100%;
+    height: 20%;
+    top: 45%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    font-family: 'Stricken Brush';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 5vw;
+    line-height: 20%;
+    color: #ffff;
+    min-width: 350px;
+    max-width: 800px;
+}
+
+.desc {
+    text-shadow: 2px 2px 5px black;
+    position: fixed;
+    width: 100%;
+    height: 20%;
+    top: 53%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.8vw;
+    line-height: 20%;
+    color: #b2bec3;
+    min-width: 350px;
+    max-width: 1000px;
+}
+
+@media (max-width: 500px) {
+    .desc {
+      top: 48%;
+    }
+}
+
+div.navbar-collapse ul.navbar-nav li a{
+    font-family: 'Cairo', sans-serif;
+    font-size: 18px;
+}
+
+.navbar-nav > li{
+    margin-left:8px;
+    margin-right:8px;
+}
